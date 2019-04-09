@@ -16,5 +16,7 @@
     "url": "https://github.com/davydhong/node-js-scale/issues"
   },
   "homepage": "https://github.com/davydhong/node-js-scale#readme",
-  "dependencies": {}
+  "dependencies": {
+    "node-localstorage": "^1.3.1"
+  }
 }
