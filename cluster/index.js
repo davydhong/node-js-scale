@@ -9,6 +9,7 @@ if (cluster.isMaster) {
     cluster.fork();
   }
   cluster.on('exit', worker => {
+    // zero downtime
     console.log(`worker process ${process.pid} has died`);
     console.log(`only ${Object.keys(cluster.workers).length} remain`);
     console.log(`starting new worker`);
